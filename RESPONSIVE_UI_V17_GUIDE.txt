@@ -1,0 +1,21 @@
+NEXTGEN mPARIVAHAN - RESPONSIVE UI V17
+
+This update preserves the original V15 screen structure, wording, logos and image/icon assets.
+
+Responsive layout changes:
+- Layout dp dimensions and shared text helper sizes scale gently against the available phone width.
+- Scaling is clamped between 0.88x and 1.08x to avoid extreme sizing.
+- Quick Access uses two columns on compact screens and four columns on wider screens.
+- Service grids use two columns on very compact screens, three columns on medium-width phones and four columns on wider phones.
+- Incomplete final grid rows retain their column alignment with blank spacers.
+- Existing ImageView FIT_CENTER / CENTER_INSIDE settings and original image resources are preserved.
+- EditText and complaint remarks text sizes follow the same responsive scale.
+
+Reference width: 393dp.
+This is a source-level responsive layout update. A full Android SDK build and visual test on a physical phone have not been performed in this environment. Device-specific fine tuning may still be needed after testing on the target phone.
+
+Import:
+1. Extract the ZIP.
+2. Open the extracted folder containing settings.gradle in Android Studio.
+3. Wait for Gradle Sync.
+4. Choose Build > Make Project, then Run on the phone.

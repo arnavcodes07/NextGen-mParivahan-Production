@@ -1,0 +1,19 @@
+REFERENCE UI UPDATE — 19 NOV 2026
+
+This build uses the original reference screenshots recovered from the earlier conversation.
+
+Visual updates:
+- Replaced Unicode/emoji quick-service and vehicle-service glyphs with crops of the supplied original reference icons.
+- Replaced Nearby Services placeholder glyphs with the supplied pollution-centre, RTO, fuel-pump and hospital illustrations.
+- Replaced My Transactions placeholder glyphs with the supplied transaction illustrations.
+- Kept the UI native and interactive; screenshots are not used as full-screen tappable backgrounds.
+
+Functional scope:
+- Offline local demo data and local transactions/complaints.
+- Navigation, search flows, virtual document/service information, nearby map intents, emergency contact save and dialler intent.
+- Mobile number 10 digits; MPIN 4 digits.
+
+Limitations:
+- This is a local demonstration app, not an official mParivahan app and not connected to VAHAN/SARATHI, live challan payment, government OTP, police reporting or live government records.
+- Nearby map actions open an installed map application; location permission/live in-app map integration is not included.
+- Android SDK build and emulator/device execution could not be run in this environment. ZIP structure and file integrity are checked, but do not treat this as a device-tested release.

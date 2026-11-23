@@ -1,0 +1,19 @@
+V14 ICON + NAVIGATION PATCH
+
+Changes made in this patch:
+- The service tiles continue to use the supplied original mParivahan PNG artwork, mapped by service name to the matching image resource.
+- The top-right notifications control now uses a vector bell icon instead of a text glyph.
+- Drawer rows now use image/vector icons instead of Unicode characters that can render differently across Android fonts.
+- Bottom navigation now uses image/vector icons instead of Unicode characters.
+- Bottom-navigation screens now re-enable the shared navigation stack, so the header Back control and Android system Back can return to the previous screen rather than unexpectedly jumping to Home.
+- Service icon area was adjusted to 56dp and caption line handling normalizes actual newline characters.
+
+Project backend status:
+- The Android app includes a local SQLite backend (users, profile, vehicles, transactions, complaints) and seeded fictional demo data.
+- It is not a Spring Boot server and is not connected to VAHAN/SARATHI, real payments, OTP, or government complaint systems.
+
+Verification:
+- XML resources were parsed successfully.
+- Resource references in MainActivity were checked against files in res/.
+- ZIP archive integrity was checked after packaging.
+- A full Gradle Android build could not be run in this environment because services.gradle.org was unreachable (UnknownHostException). Do not treat this archive as device/build certified until Gradle sync and Build > Make Project succeed in Android Studio.

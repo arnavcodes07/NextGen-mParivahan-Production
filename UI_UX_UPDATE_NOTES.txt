@@ -1,0 +1,34 @@
+NEXTGEN mPARIVAHAN - UI/UX UPDATE
+
+This update retains the existing Android native Java project, local SQLite demo backend, sample records and original supplied image assets. It improves the native layouts to follow the supplied reference screens more closely.
+
+UI updates:
+- Branded pale-blue header with the supplied NextGen mParivahan logo, working menu, SOS shortcut and notifications shortcut.
+- Home screen search row, four quick-service tiles, About NextGen mParivahan and About Vehicle service grids.
+- Rounded blue bottom navigation with Home, Virtual Documents, Nearby and Settings actions.
+- Drawer with profile area, icons and navigation to all main sections.
+- Reference-style transaction category cards, plus local recent activity and complaint history.
+- Nearby services list with four service categories and detail actions.
+- Citizen Sentinel page with complaint, safety, alerts and tracking actions.
+- Emergency Service page with the cropped cloud artwork, saved emergency contact, dialler launch for 102 and notification preview.
+- Shared branded subheaders on service pages.
+- Vehicle / Driving Licence selection in the home search control.
+
+Demo login:
+Mobile: 9560559548
+MPIN: 8554
+
+Important:
+- All people, vehicle, RC, DL, complaints and transaction information are fictional offline demo data.
+- No official government VAHAN/SARATHI, challan payment, OTP, police reporting or emergency notification API is connected.
+- The ambulance button opens the phone dialler for 102; it does not place a call automatically.
+- Nearby View Map currently opens the relevant demo service information. Live map results require location permission and a map/location provider integration.
+
+Import:
+1. Extract the ZIP.
+2. Open the extracted project root folder containing settings.gradle in Android Studio.
+3. Set Gradle JDK to JDK 17 or the Android Studio Embedded JDK compatible with AGP 9.0.1.
+4. Allow Gradle Sync, then Build > Rebuild Project and Run.
+
+Build verification:
+The project source and XML structure were inspected. A full Gradle build could not be completed in this environment because the Gradle 9.3.0 distribution could not be downloaded (network/DNS unavailable) and no Android SDK was installed here. Please run the build in Android Studio; if it reports an error, share the first Build Output error so it can be corrected precisely.

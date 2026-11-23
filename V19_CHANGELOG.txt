@@ -1,0 +1,11 @@
+V19 — API-connected navigation stabilization
+
+- Migrated login, registration, MPIN generation/reset, vehicle and licence lookup, profile read/update, complaint create/list, transaction create/list, people directory, nearby categories and emergency contacts to the bundled Spring Boot API.
+- Removed the old LocalBackend SQLite class and silent SQLite fallback from Android app data flows.
+- Added API endpoints for registration, MPIN reset, profile update, demo licence records, people, nearby categories and emergency contacts.
+- Added per-control repeated-tap suppression for screen-navigation controls.
+- Preserved supplied V17/V18 logos, images, UI styling, drawer and bottom navigation.
+- Simplified Gradle: Gradle 8.9, AGP 8.7.3, JDK 17, compile SDK 35, target SDK 34; removed unused Kotlin plugin.
+- Added START_LOCAL_API.bat and refreshed API setup documentation.
+
+Verification limits: archive/resource/source checks can be run here. Full Android Gradle build, Maven build, emulator run and device interaction require Android SDK/Maven and are not claimed as completed.

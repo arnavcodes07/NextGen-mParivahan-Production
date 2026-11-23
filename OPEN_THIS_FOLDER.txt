@@ -1,0 +1,7 @@
+ANDROID STUDIO PROJECT ROOT
+
+This folder itself is the Gradle project root. It must contain settings.gradle, build.gradle, gradlew.bat, and app\.
+
+In Android Studio choose File > Open and select this exact folder: NextGen_mParivahan_ANDROID_STUDIO_PROJECT_FIXED. Do NOT open app\ or any parent folder.
+
+If Android Studio still says no Gradle build, use File > Close Project, then File > Open and select this folder again.

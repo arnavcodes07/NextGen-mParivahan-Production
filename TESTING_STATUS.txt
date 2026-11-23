@@ -1,0 +1,36 @@
+NextGen mParivahan V19 — Staging package preparation status
+
+Package preparation checks completed:
+- Uploaded ZIP extracted and reviewed.
+- Android XML files parsed successfully.
+- Required Android drawable references reviewed; android.R system drawable references are platform resources.
+- Transaction table schema and API SQL corrected to use transaction_value (with response alias `value`).
+- Android API base URL moved to Gradle BuildConfig property so staging endpoint can be configured without editing Java source.
+- Debug build allows cleartext HTTP for local staging; release manifest disables cleartext.
+- Added isolated Spring Boot staging profile and staging startup/build scripts.
+- Added production PostgreSQL configuration template and environment-variable example.
+- Output ZIP integrity test passed.
+
+Not verified:
+- Gradle Android build / Android Studio sync.
+- Maven compile or Spring Boot runtime.
+- Emulator or physical-device launch and screen interaction.
+- API end-to-end workflows.
+These tools/dependencies (Android SDK, Gradle distribution, Maven dependencies) are not installed in this preparation environment. The generated ZIP must be built and tested on the user's Android Studio/Windows setup.
+
+Critical limitations before production:
+- Demo MPIN is stored and compared as plaintext; no token/session authorization, per-user endpoint authorization, rate limiting, lockout, OTP or audit controls.
+- Registration and MPIN reset return MPIN in API response.
+- Production database schema migration strategy is not yet implemented.
+- Nearby and emergency data are static demo responses; complaints are only saved locally and not submitted to any authority.
+- No official government integrations or live payment/OTP services.
+- Do not expose the demo API to the public internet or publish a release until production security work is complete.
+
+See STAGING_FIRST_README.md for staging instructions and production/live deployment gates.
+
+
+V19 follow-up update (2026-11-23):
+- Navigation drawer top internal padding reduced from 20dp to 4dp to address the visible top gap.
+- Drawer footer label updated to Staging version 1.7.
+- Added BUILD_STAGING_APK_PHONE.bat to build with the user's PC LAN IPv4 address for physical-device API connectivity.
+- Source-level review completed; Android build, backend runtime, and device interaction remain unverified in this environment.

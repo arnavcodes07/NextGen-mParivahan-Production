@@ -1,0 +1,10 @@
+NEXTGEN mPARIVAHAN — ICON LABEL SPACING UPDATE
+
+This update addresses labels appearing too short or clipped beneath service icons.
+- Increased quick-service row height on the home screen.
+- Increased service-section row height to provide more vertical room.
+- Increased icon/caption layout space and caption font size from 11sp to 12sp.
+- Captions now support up to three centered lines with improved line spacing and high-quality wrapping.
+- Added small horizontal caption padding so long labels fit more naturally.
+
+The app remains a native Android project. This is a source/layout update; a full Android SDK build and emulator visual check were not available in this environment.

@@ -1,0 +1,15 @@
+NextGen mParivahan V19 staging update
+
+Changes in this package:
+- Reduced the navigation drawer's internal top padding from 20dp to 4dp so its white panel sits flush with the top of the app content instead of appearing visibly dropped down.
+- Updated the drawer footer to identify this package as Staging version 1.7.
+- Added BUILD_STAGING_APK_PHONE.bat. It asks for the development PC's LAN IPv4 address and builds the debug APK with that phone-reachable API URL. This avoids the common mistake of using 10.0.2.2 on a physical phone.
+
+Important: The drawer is still an existing Java Activity implementation. This change addresses its visible top gap; it does not claim a complete navigation redesign or prove every screen action is defect-free.
+
+Validation performed in this preparation environment:
+- ZIP extracted and source files inspected.
+- Android manifest XML parsed successfully.
+- Source change and helper script reviewed.
+- Gradle Android build and Maven runtime could not be executed here because Android SDK/Gradle distribution/Maven dependencies are not available.
+- Physical phone and API end-to-end tests remain required on the user's Windows machine.

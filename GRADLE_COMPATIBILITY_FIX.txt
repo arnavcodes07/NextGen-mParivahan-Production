@@ -1,0 +1,8 @@
+V19 fixed Android build toolchain:
+- Gradle Wrapper: 8.9
+- Android Gradle Plugin: 8.7.3
+- JDK / Java source / target: 17
+- Compile SDK: 35
+- Kotlin Android plugin removed because the Android app contains Java source only.
+
+Open the project root containing settings.gradle. In Android Studio set Gradle JDK to JDK 17 and use the checked-in Gradle Wrapper. The first sync still needs network access to download Gradle/dependencies unless they are already cached.

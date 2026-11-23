@@ -1,0 +1,19 @@
+NEXTGEN mPARIVAHAN V18 — ANDROID STUDIO IMPORT
+
+1. Extract the ZIP completely (Windows: right-click > Extract All).
+2. Open Android Studio > File > Open.
+3. Select the extracted NextGen_mParivahan_V18 folder itself — the folder containing
+   settings.gradle and build.gradle. Do not open app/ or backend/.
+4. Set Gradle JDK to JDK 17:
+   File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JDK.
+5. Use the Gradle Wrapper. The project is pinned to Gradle 8.9 + Android Gradle
+   Plugin 8.7.3 + Java 17 + compileSdk 35.
+6. Allow the first Gradle sync to finish, then Build > Rebuild Project > Run.
+
+Demo login
+Mobile: 9560559548
+MPIN: 8554
+Alternative: 9876543210 / 1234
+
+The Android app can use local SQLite demo data without starting the API. To test
+the Spring Boot API, follow backend/README_BACKEND.txt. The records are fictional.

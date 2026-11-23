@@ -1,0 +1,27 @@
+NEXTGEN mPARIVAHAN — V18 PATCH NOTES
+
+Navigation
+- Reworked drawer construction with START gravity, safe width clamping, elevation,
+  clickable outside shade, focusable menu rows and clear close-before-route behavior.
+- Kept all existing drawer destinations and existing V17 imagery/layout.
+- Added Android 13+ OnBackInvokedDispatcher callback and unregister-on-destroy.
+- Retained legacy onBackPressed behavior for Android 12 and earlier.
+
+Backend / login
+- Kept local SQLite as the offline-first fallback.
+- Local sign-up and locally generated MPIN accounts remain usable even if the API
+  responds with HTTP 401 because that account is not present on the server.
+- Seeded both documented demo users in the Spring Boot H2 backend.
+- Added exact 10-digit mobile validation to complaint API requests.
+
+Build
+- Gradle 8.9
+- Android Gradle Plugin 8.7.3
+- Kotlin Android plugin 2.0.21
+- Java / Gradle JDK 17
+- compileSdk 35
+- app versionCode 6 / versionName 1.5
+
+Design
+- Kept the V17 native screens, supplied logo, splash and service images in place.
+- Did not replace the UI with screenshot backgrounds or alter the visual concept.

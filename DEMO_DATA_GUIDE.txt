@@ -1,0 +1,24 @@
+NEXTGEN mPARIVAHAN - OFFLINE DEMO DATA
+
+Demo login
+Mobile: 9560559548
+MPIN: 8554
+
+Pre-filled screens
+- 40 fictional vehicle owners across 10 Indian states in Demo People Directory.
+- Vehicle lookup examples: DL01AB1000, MH01AB1001, UP01AB1002, HR01AB1003, KA01AB1005.
+- Sample virtual RC and DL details, sharing/received document examples.
+- Sample citizen alerts, road-safety information, RTO and nearby-service cards.
+- Pre-filled demo vehicle searches and complaint history in My Transactions.
+- Each service card opens a detail view with example fields and next-step information.
+
+IMPORTANT
+All people, vehicle records, licence/document records, applications, complaints,
+nearby businesses, alerts and activity seeded for demonstration are fictional.
+They are not real personal data, official government records, verified live
+locations, submitted complaints, or actual applications. The app works offline
+with a local SQLite database and is not connected to VAHAN, SARATHI, police,
+RTO, payment, OTP, or emergency dispatch systems.
+
+Database upgrade: version 7. Existing installs receive demo history on upgrade
+when their local history tables are empty. Existing user-entered records are kept.

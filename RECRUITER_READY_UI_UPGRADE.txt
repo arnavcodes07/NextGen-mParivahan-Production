@@ -1,0 +1,25 @@
+NEXTGEN mPARIVAHAN — RECRUITER PRESENTATION UI UPDATE
+
+What changed in this update
+- Reworked the home screen into a cleaner, more consistent service dashboard.
+- Added a soft transport-blue visual system, clearer hierarchy and spacing.
+- Restyled quick-access and service tiles with rounded surfaces, icon panels and subtle elevation.
+- Improved the vehicle / driving-licence search control with a distinct category selector and search action.
+- Refined section headings and accent markers so the dashboard reads as a designed product.
+- Refined shared headers, content cards and bottom navigation for a more consistent experience.
+- Increased the visual clarity of labels while preserving multi-line captions for long service names.
+- Bumped app version to 1.2 (versionCode 3).
+
+Existing behaviour retained
+- Offline SQLite demo backend and fictional vehicle records.
+- Login / account creation / MPIN generation, local transactions, complaint demo, profile, emergency contact preview, nearby service hand-off, settings and JSON backup.
+- Original NextGen mParivahan branding and supplied image assets.
+
+Important for recruiter demonstrations
+- This is a portfolio / offline demonstration build, not an official government application.
+- Vehicle and owner data are fictional local sample records.
+- Live VAHAN / SARATHI records, OTP, payments, complaint submission and live emergency notifications are not connected; those require authorised production APIs and approvals.
+
+Build verification
+- ZIP structure is checked and the Android Studio Gradle root is at the top level.
+- A local Gradle assemble could not be completed in this environment because the Gradle 8.9 distribution was not cached and network access to services.gradle.org was unavailable. Please sync/build in Android Studio with network access for the first Gradle download.
